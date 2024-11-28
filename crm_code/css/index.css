@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Clock styling */
+.clock {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #1f4e79;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    margin: 0 15px;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #d1e8ff;
+}
+
+.btn-outline-danger {
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+/* Cards for stats */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+}

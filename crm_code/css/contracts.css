@@ -1,0 +1,266 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Clock styling */
+.clock {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #1f4e79;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar .nav-link {
+    margin: 0 15px;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #d1e8ff;
+}
+
+/* Outline Danger Button Styling */
+.btn-outline-danger {
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #1f4e79;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5fa;
+}
+
+.table td, .table th {
+    padding: 12px;
+    text-align: center;
+}
+
+/* View, Delete, Liquidate, and Renew Button Styling */
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-view{
+    background-color: #00aeff;
+    color: white;
+}
+/* Delete Button in View Window */
+.modal-footer .btn-delete {
+    background-color: #f44336; /* Red */
+    color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    position: absolute;
+    bottom: 33px;
+    left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.modal-footer .btn-delete:hover {
+    background-color: #e53935; /* Darker Red */
+}
+/* Liquidate Button */
+.btn-liquidate, .btn-liquidate-confirm {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+
+
+/* Renew Button */
+.btn-renew, .btn-renew-confirm {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+
+/* Card for Contract Information */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Modal Styles (for contract viewing) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.modal-header {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.close-btn {
+    font-size: 18px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* Notification Styling */
+.notification {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.notification-success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.notification-error {
+    background-color: #f44336;
+    color: white;
+}
+
+.notification-warning {
+    background-color: #ff9800;
+    color: white;
+}
+
+.notification-info {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* Card Table for Contracts */
+.contract-card-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contract-card-table th,
+.contract-card-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.contract-card-table th {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contract-card-table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.contract-card-table .view-btn,
+.contract-card-table .delete-btn,
+.contract-card-table .liquidate-btn,
+.contract-card-table .renew-btn {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
